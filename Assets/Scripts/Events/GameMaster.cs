@@ -15,6 +15,7 @@ public class GameMaster : MonoBehaviour
     private GameObject checkpoint3;
 
     private GameObject key2;
+    private GameObject controls;
 
     void Awake()
     {
@@ -26,6 +27,9 @@ public class GameMaster : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        controls = GameObject.Find("ControlsMenu");
+        controls.SetActive(false);
     }
     // Start is called before the first frame update
     void Start()
