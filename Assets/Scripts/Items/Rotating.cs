@@ -11,7 +11,6 @@ public class Rotating : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     void Update()
@@ -28,9 +27,7 @@ public class Rotating : MonoBehaviour
 
             if (playerController != null)
             {
-                /*other.GetComponent<PlayerStats>().isKeyFound = true;*/
-                gm.keys += 1;
-                print(gm.keys);
+                other.GetComponent<PlayerStats>().keys += 1;
                 audioSource.Play();
             }
             Destroy(gameObject);
