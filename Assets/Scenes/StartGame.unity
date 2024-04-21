@@ -8498,8 +8498,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 525057842}
-        m_TargetAssemblyTypeName: ToggleMenu, Assembly-CSharp
-        m_MethodName: ShowMenu
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: TogglePanel1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8556,9 +8556,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 525057836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45622a9f166fbc94297ddc5837ffbb48, type: 3}
+  m_Script: {fileID: 11500000, guid: 05f4e0e8b88297e4496680bd09fca2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel1: {fileID: 748540231}
+  panel2: {fileID: 1037684953}
 --- !u!1001 &529020613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11637,6 +11639,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+--- !u!1 &748540231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7535021223552667319, guid: e6064fe510f1a1941a5a0090d72b6235, type: 3}
+  m_PrefabInstance: {fileID: 203565309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &748540232 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7535021223552667318, guid: e6064fe510f1a1941a5a0090d72b6235, type: 3}
@@ -14765,8 +14772,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922235781}
-        m_TargetAssemblyTypeName: ToggleControls, Assembly-CSharp
-        m_MethodName: ShowControls
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: TogglePanel2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14823,9 +14830,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 922235776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 882a434d191141f42aa490ed2061049d, type: 3}
+  m_Script: {fileID: 11500000, guid: 05f4e0e8b88297e4496680bd09fca2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel1: {fileID: 748540231}
+  panel2: {fileID: 1037684953}
 --- !u!4 &923721674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7e7c5a68504558b45bd9e9301d6c579b, type: 3}
@@ -16097,7 +16106,7 @@ GameObject:
   - component: {fileID: 1037684956}
   - component: {fileID: 1037684955}
   m_Layer: 5
-  m_Name: Controls
+  m_Name: ControlsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
