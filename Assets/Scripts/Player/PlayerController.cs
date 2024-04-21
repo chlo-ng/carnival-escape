@@ -334,7 +334,6 @@ public class PlayerController : MonoBehaviour
             cat.SetActive(true);
             cat_original.SetActive(false);
             print("can jump now");
-            print(allowJump);
         }
     }
 
@@ -344,7 +343,6 @@ public class PlayerController : MonoBehaviour
         {
             allowJump = false;
             print("cannot jump now");
-            print(allowJump);
         }
     }
 }
