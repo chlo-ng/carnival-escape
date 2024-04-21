@@ -35,29 +35,5 @@ public class CheckpointManager : MonoBehaviour
             }
         }
     }
-/*    public Transform player; // Reference to the player's transform
-    private Transform currentCheckpoint; // Store the current active checkpoint
-
-    // Function to set the current checkpoint
-    public void SetCheckpoint(Transform checkpoint)
-    {
-        currentCheckpoint = checkpoint;
-    }
-
-    // Function to respawn the player at the last activated checkpoint
-    public void RespawnPlayer()
-    {
-        if (currentCheckpoint != null)
-        {
-            player.position = currentCheckpoint.position; // Move the player to the checkpoint position
-            // You might also want to reset player health, energy, etc. here if applicable
-        }
-        else
-        {
-            // If no checkpoint is set, respawn the player at the starting position or default respawn location
-            Debug.LogWarning("No checkpoint set. Respawning at default location.");
-            // Implement default respawn behavior here
-        }
-    }*/
 }
 

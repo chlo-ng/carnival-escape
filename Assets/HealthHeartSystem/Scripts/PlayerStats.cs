@@ -37,7 +37,7 @@ public class PlayerStats : MonoBehaviour
     public float MaxHealth { get { return maxHealth; } }
     public float MaxTotalHealth { get { return maxTotalHealth; } }
     public bool isCatFound = false;
-/*    public bool isKeyFound = false;*/
+    public int keys = 0;
     private AudioSource audioSource;
     private GameMaster gm;
 
@@ -87,10 +87,16 @@ public class PlayerStats : MonoBehaviour
     }
     void Respawn()
     {
-        transform.position = gm.lastCheckPointPos; // Move the player to the respawn position
+        transform.position = gm.lastCheckPointPos;// Move the player to the respawn position
         transform.rotation = Quaternion.identity; // Reset the player's rotation to default (no rotation)
         health = respawnHealth; // Restore health to respawn value
-        isCatFound = false;
+
+        // cat will reset when dying after finding it but hasn't reached a different checkpoint
+        if (gm.lastCheckPoint != 0 && isCatFound)
+        {
+            isCatFound = false;
+        }
+
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
